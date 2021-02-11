@@ -33,7 +33,7 @@ end)
 local modWeap = game:GetService('ReplicatedFirst')['_0xS0URC3X'].Shared.WeaponDataManager
 Folder1.Button("No recoil", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
-        if v:IsA('ModuleScript') then
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.RECOIL_STRENGTH = 0.0
             require(v).Settings.AttackAnimation = nil
         end
@@ -42,7 +42,7 @@ end)
 
 Folder1.Button("No spread", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
-        if v:IsA('ModuleScript') then
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.SPREAD = 0.0
         end
     end
@@ -50,7 +50,7 @@ end)
 
 Folder1.Button("Infinite ammo", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
-        if v:IsA('ModuleScript') then
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.MAX_AMMO = math.huge
         end
     end
@@ -58,7 +58,7 @@ end)
 
 Folder1.Button("Instant reload", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
-        if v:IsA('ModuleScript') then
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.RELOAD_TIME = 0
             require(v).Settings.ReloadAnimation = nil
         end
@@ -67,7 +67,7 @@ end)
 
 Folder1.Button("Automatic gun", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
-        if v:IsA('ModuleScript') then
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.AUTOMATIC = true
         end
     end
@@ -75,7 +75,7 @@ end)
 
 Folder1.Button("No heavy weapon slowdown", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
-        if v:IsA('ModuleScript') then
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.HEAVY = false
         end
     end
@@ -83,7 +83,7 @@ end)
 
 Folder1.Button("Rapid fire", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
-        if v:IsA('ModuleScript') then
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.ROF = 999999
         end
     end
