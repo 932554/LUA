@@ -8,7 +8,7 @@ if not game.PlaceId == 4738545896 then
 end
 
 local config = {
-    toggles = {silentAim = false; point = false; espEnabled = false; espBoxes = false; espNames = false; espHealth = false; espLines = false;};
+    toggles = {silentAim = false; point = false; espEnabled = false; espBoxes = false; espNames = false; espHealth = false; espLines = false;}; -- Adding esp soon
 }
 
 local Players = game:GetService('Players')
