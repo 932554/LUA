@@ -8,7 +8,7 @@ if not game.PlaceId == 4738545896 then
 end
 
 local config = {
-    toggles = {silentAim = false; point = false; espEnabled = false; espBoxes = false; espNames = false; espHealth = false; espLines = false;}; -- Adding esp soon
+    toggles = {silentAim = false; point = false; espEnabled = false; espBoxes = false; espNames = false; espHealth = false; espLines = false;};
 }
 
 local Players = game:GetService('Players')
@@ -85,6 +85,15 @@ Folder1.Button("Rapid fire", "Click", function()
     for i,v in pairs(modWeap:GetChildren()) do
         if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
             require(v).Settings.ROF = 999999
+        end
+    end
+end)
+
+Folder1.Button("Infinite range", "Click", function()
+    for i,v in pairs(modWeap:GetChildren()) do
+        if v:IsA('ModuleScript') and v.Name ~= 'Golden Knife' then
+            require(v).Settings.MIN_DAMAGE_RANGE = 9999
+            require(v).Settings.MAX_DAMAGE_RANGE = 9000
         end
     end
 end)
