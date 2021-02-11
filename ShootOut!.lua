@@ -8,7 +8,7 @@ if not game.PlaceId == 4738545896 then
 end
 
 local config = {
-    toggles = {silentAim = false; espEnabled = false; espBoxes = false; espNames = false; espHealth = false; espLines = false;}; -- ESP being added
+    toggles = {silentAim = false; point = false; espEnabled = false; espBoxes = false; espNames = false; espHealth = false; espLines = false;};
 }
 
 local Players = game:GetService('Players')
@@ -105,7 +105,7 @@ end)
 
 local gui = game:GetService('CoreGui'):FindFirstChild('Luminosity')
 game:GetService('UserInputService').InputBegan:Connect(function()
-    if UserInputService:IsKeyDown(Enum.KeyCode.RightControl) then
+    if game:GetService('UserInputService'):IsKeyDown(Enum.KeyCode.RightControl) then
         if gui.Enabled == false then
             gui.Enabled = true
         else
