@@ -10,7 +10,6 @@ if not game:IsLoaded() then
 end
 
 local player = game:GetService('Players').LocalPlayer
-player.Character.Humanoid.WalkSpeed = 125
 game:GetService("UserInputService").InputBegan:Connect(function(Input)
     if Input.KeyCode == Enum.KeyCode.F then
         for i,v in pairs(workspace:GetDescendants()) do
