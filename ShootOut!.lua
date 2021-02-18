@@ -1,4 +1,5 @@
-function notify(str1,str2,int1)
+warn('PSU was offline lol')
+local function notify(str1,str2,int1)
     game.StarterGui:SetCore("SendNotification", {
         Title = str1,
         Text = str2,
