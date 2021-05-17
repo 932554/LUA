@@ -2,13 +2,14 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-if Humanoid.RigType == Enum.HumanoidRigType.R6 then
-    print("Animations will not work. Rejoin in R15.")
-    return
-end
-
 local Player = game:GetService("Players").LocalPlayer
 local Character = Player.Character or Player.CharacterAdded:Wait()
+
+if Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+    warn("Animations will not work. Rejoin in R15.")
+	return
+end
+
 Player.CharacterAdded:Connect(function(Char)
     Character = Char
 end)
