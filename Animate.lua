@@ -37,6 +37,8 @@ local function AnimatePlayer(Character)
     end
 end
 
-AnimatePlayer(Character)
+if Character then
+    AnimatePlayer(Character)
+end
 
 Player.CharacterAdded:Connect(AnimatePlayer)
