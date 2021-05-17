@@ -32,7 +32,7 @@ local function AnimatePlayer(Character)
         Animate.jump.JumpAnim.AnimationId = "rbxassetid://" .. AnimationIds.jump
         Animate.fall.FallAnim.AnimationId = "rbxassetid://" .. AnimationIds.fall
         Animate.swim.Swim.AnimationId = "rbxassetid://" .. AnimationIds.swim
-        Animate.swimIdle.SwimIdle.AnimationId = "rbxassetid://" .. AnimationIds.swimIdle
+        Animate.swimidle.SwimIdle.AnimationId = "rbxassetid://" .. AnimationIds.swimIdle
         Animate.climb.ClimbAnim.AnimationId = "rbxassetid://" .. AnimationIds.climb
     end
 end
