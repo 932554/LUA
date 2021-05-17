@@ -7,7 +7,7 @@ local Character = Player.Character or Player.CharacterAdded:Wait()
 
 if Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
     warn("Animations will not work. Rejoin in R15.")
-	return
+    return
 end
 
 Player.CharacterAdded:Connect(function(Char)
